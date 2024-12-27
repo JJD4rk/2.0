@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JJDark2.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>JJDark2.0</h1>
+    </header>
+
+    <!-- Menu de abas -->
+    <div class="tabs">
+        <button class="tablinks active" onclick="openCategory(event, 'CitizenPCFraco')">Citizen PC Fraco</button>
+        <button class="tablinks" onclick="openCategory(event, 'CitizenMassinha')">Citizen Massinha</button>
+    </div>
+
+    <!-- Conteúdo das categorias -->
+    <div id="CitizenPCFraco" class="tabcontent active">
+        <div class="category-cards">
+            <!-- Card 1 -->
+            <div class="download-card">
+                <div class="card-body">
+                    <img src="https://cdn.discordapp.com/attachments/1322070164589772873/1322073171632980008/Screenshot_12_Easy-Resize.com.jpg?ex=676f8c17&is=676e3a97&hm=2ad25b1b075d1e878b2e85dcecb4fd288668e66bb0017f7792c4437cfc0f8079&" alt="Citizen 1">
+                    <a href="https://youtu.be/B8VNx5qL_7U" target="_blank">Assista o vídeo</a>
+                    <a href="https://fbol.top/personalizada" download>Baixar Citizen</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="download-card">
+                <div class="card-body">
+                    <img src="https://cdn.discordapp.com/attachments/1322070164589772873/1322072204447322203/Screenshot_5_Easy-Resize.com.jpg?ex=676f8b30&is=676e39b0&hm=56eae2987844584a77fea10cb1a951ee539371042295a502c79874f059078731&" alt="Citizen 2">
+                    <a href="https://www.youtube.com/watch?v=VNk1sdCuzMw" target="_blank">Assista o vídeo</a>
+                    <a href="https://fbol.top/citizenazul" download>Baixar Citizen</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="download-card">
+                <div class="card-body">
+                    <img src="https://cdn.discordapp.com/attachments/1322070164589772873/1322102297467027457/imagem_2024-12-27_042147519_Easy-Resize.com.jpg?ex=676fa737&is=676e55b7&hm=08cbd5470b4ee89239ceaf4dd8181fe0e6cbe892c7c966d3a6806fd51c6f9b76&" alt="Citizen 2">
+                    <a href="https://youtu.be/_lbRMfIrGv8" target="_blank">Assista o vídeo</a>
+                    <a href="https://fbol.top/tFweFJm" download>Baixar Citizen</a>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="download-card">
+                <div class="card-body">
+                    <img src="https://cdn.discordapp.com/attachments/1322070164589772873/1322104270614560778/WhatsApp_Image_2024-12-08_at_16.46.54_1.jpeg?ex=676fa90d&is=676e578d&hm=85dff8566b216630b29771fb61d3a468a3de9b26f484408c3f80d5ef98dfbe09&" alt="Citizen 2">
+                    <a href="https://youtu.be/UwpIGGA7Qso" target="_blank">Assista o vídeo</a>
+                    <a href="https://fbol.top/hs9aBV" download>Baixar Citizen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="CitizenMassinha" class="tabcontent">
+        <div class="category-cards">
+            <!-- Card 1 -->
+            <div class="download-card">
+                <div class="card-body">
+                    <img src="https://cdn.discordapp.com/attachments/1322070164589772873/1322113241370988675/thumb_JJEscuro_Easy-Resize.com.jpg?ex=676fb168&is=676e5fe8&hm=a6a6d8f6b8c07d32d56a86476acbad5787f5faeda919d3d9489a4981749b02ec&" alt="Citizen 2">
+                    <a href="https://youtu.be/kJjZYdyC1vk" target="_blank">Assista o vídeo</a>
+                    <a href="https://fbol.top/ZmgqHDH" download>Baixar Citizen</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="download-card">
+                <div class="card-body">
+                    <img src="https://cdn.discordapp.com/attachments/1322070164589772873/1322113786148032573/maxresdefault-enhanced_Easy-Resize.com.jpg?ex=676fb1ea&is=676e606a&hm=16993d45349cedeb1294561e31382d846ca60bd0b0bcafc8a2785a4bd309c68f&" alt="Citizen 2">
+                    <a href="https://youtu.be/wqgvmcELrGY" target="_blank">Assista o vídeo</a>
+                    <a href="https://fbol.top/SQrLnDT" download>Baixar Citizen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 JJDark2.0 - Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function openCategory(evt, categoryName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(categoryName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+</body>
+</html>
+<!-- Botões de redes sociais -->
+<div class="social-buttons">
+    <a href="https://discord.gg/eAz9BWPvvy" target="_blank" class="social-button discord">
+        <img src="imagens/discord.png" alt="Discord">
+    </a>
+    <a href="https://www.youtube.com/@JJD4RKzinho" target="_blank" class="social-button youtube">
+        <img src="imagens/youtube.png" alt="YouTube">
+    </a>
+</div>
+
